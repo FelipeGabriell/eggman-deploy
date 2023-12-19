@@ -512,13 +512,13 @@ h4 {
 @media only screen and (min-width: 56.25em) {
     .btn {
         font-size: 2rem;
-        width: 26rem
+        width: 36rem
     }
 }
 
 @media only screen and (min-width: 112.5em) {
     .btn {
-        width: 30rem
+        width: 40rem
     }
 }
 
@@ -2210,11 +2210,12 @@ th {
 .purchase__button__group {
     display: flex;
     flex-wrap: wrap
+
 }
 
 .purchase__group {
     margin: 5rem auto 0;
-    max-width: 150rem;
+    max-width: 200rem;
     position: relative;
     text-align: center;
     width: 95%
