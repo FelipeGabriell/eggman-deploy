@@ -1,7 +1,7 @@
 /**
-Website:  https://doctoreggman.xyz//
-Telegram: https://t.me/DrEggmanFTM
-Twitter:  https://x.com/DrEggManFTM
+Website:  https://doctoreggman.xyz/
+Telegram: https://t.me/DrEggmanFTM/
+Twitter:  https://x.com/DrEggManFTM/
 */
 
 // File: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/audit/2023-07-10/contracts/interfaces/draft-IERC6093.sol

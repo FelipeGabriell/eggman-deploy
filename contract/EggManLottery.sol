@@ -1,7 +1,7 @@
 /**
-Website:  https://doctoreggman.xyz//
-Telegram: https://t.me/DrEggmanFTM
-Twitter:  https://x.com/DrEggManFTM
+Website:  https://doctoreggman.xyz/
+Telegram: https://t.me/DrEggmanFTM/
+Twitter:  https://x.com/DrEggManFTM/
 */
 
 // SPDX-License-Identifier: MIT
