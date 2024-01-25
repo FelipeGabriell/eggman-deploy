@@ -23,7 +23,7 @@ contract ERC20 {
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
 }
 
-contract EGGMAN_MINER_NEW {
+contract EGGMAN_MINER_v2 {
     //uint256 EGGS_PER_MINERS_PER_SECOND=1;
     address eggman =0x8050bc51D00a2Ad1d42f018Ae1A27c8C5b433810; 
     uint256 public EGGS_TO_HATCH_1MINERS=86400;
