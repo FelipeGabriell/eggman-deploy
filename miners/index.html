@@ -91,10 +91,15 @@
                                             src="/images/eggman_logo.png"></h1>
                                     <div class="title">
                                         <p class="daily">8% Daily</p>
-                                        <p class="apr">2,920 APR</p>
+                                        <p class="apr">2,920 APR</p><br>
+
+                                        <button class="btn btn--gold" id="connectWalletButton"
+                                            onclick="connectWallet()">Connect
+                                            Wallet</button><br><br>
+
+                                        <div id="walletAddress"></div>
                                     </div>
                                 </div>
-
 
                                 <div>
                                     <div class="container-fluid miners-tally-container">
@@ -298,12 +303,61 @@
                             <script src="/js/web3.min.js"></script>
                             <script src="/js/main_eth.js"></script>
                             <script src="/js/crypto-js.min.js"></script>
+                            <script>
+                                async function updateWalletAddress() {
+                                    try {
+                                        // Check if Web3 is available
+                                        if (window.ethereum) {
+                                            // Check if the user is already connected
+                                            const accounts = await window.ethereum.request({ method: 'eth_accounts' });
 
+                                            // Update the wallet address div with the connected address
+                                            const walletAddressDiv = document.getElementById('walletAddress');
+                                            if (walletAddressDiv) {
+                                                if (accounts.length > 0) {
+                                                    const fullAddress = accounts[0];
+                                                    const shortenedAddress = `${fullAddress.substring(0, 6)}...${fullAddress.substring(fullAddress.length - 4)}`;
+                                                    walletAddressDiv.textContent = `Connected Wallet Address: ${shortenedAddress}`;
+                                                } else {
+                                                    walletAddressDiv.textContent = 'Wallet not connected.';
+                                                }
+                                            }
+                                        } else {
+                                            // Web3 provider not found or not enabled
+                                            console.error('Web3 provider not found or not enabled.');
+                                        }
+                                    } catch (error) {
+                                        console.error('Error updating wallet address:', error);
+                                    }
+                                }
+
+                                async function connectWallet() {
+                                    try {
+                                        // Check if Web3 is available
+                                        if (window.ethereum) {
+                                            // Request account access
+                                            await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+                                            // Wait for a short time to allow the connection to take effect
+                                            await new Promise(resolve => setTimeout(resolve, 1000));
+
+                                            // Update the wallet address after connection
+                                            updateWalletAddress();
+                                        } else {
+                                            // Web3 provider not found or not enabled
+                                            console.error('Web3 provider not found or not enabled.');
+                                        }
+                                    } catch (error) {
+                                        console.error('Error connecting wallet:', error.message);
+                                    }
+                                }
+
+                                // Call the updateWalletAddress function when the page loads
+                                window.addEventListener('load', updateWalletAddress);
+                            </script>
                         </div>
                 </aside>
             </div>
         </section>
     </main>
-
-
 </body>
