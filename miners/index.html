@@ -84,7 +84,7 @@
                                 </picture>
                             </a>
 
-                            <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="miners-tab">
+                            <div class="paragraph paragraph--black textbox__paragraph features__text--2">
 
                                 <div class="banner">
                                     <h1><img alt="Axie Infinity" class="icon" style="width:150px;"
@@ -95,24 +95,25 @@
                                     </div>
                                 </div>
 
+
                                 <div>
                                     <div class="container-fluid miners-tally-container">
                                         <img alt="Miners" class="icon" src="/images/miner.svg">
-                                        <h2 class="tally-text"><u><span class="num-miners">0</span></u> EGGMAN Miners
-                                        </h2>
+                                        <label class="tally-text"><u><span class="num-miners">0</span></u> EGGMAN
+                                            Miners</label>
                                     </div>
                                     <div class="digging-mined-container">
                                         <div class="custom-row">
                                             <img alt="Digging" class="icon" src="/images/pickaxe.svg">
                                             <div class="dm-container-right">
-                                                <h2>Digging</h2>
+                                                <label>Digging</label>
                                                 <p><span id="production-rate">0</span> feet per hour</p>
                                             </div>
                                         </div>
                                         <div class="custom-row">
                                             <img alt="Mined" class="icon" src="/images/mine.svg">
                                             <div class="dm-container-right">
-                                                <h2>Mined</h2>
+                                                <label>Mined</label>
                                                 <p><span id="sell-price">?</span> EGGMAN</p>
                                                 <p><span id="until-full">?</span> until full</p>
                                             </div>
@@ -128,7 +129,8 @@
                                                 <span class="bnb-text">EGGMAN</span>
                                             </div>
                                             <br>
-                                            <button class="btn btn-lg btn-buy" onclick="approve()" role="button">Approve
+                                            <button class="btn btn--gold btn--large gtm__HeroBtn" onclick="approve()"
+                                                role="button">Approve
                                                 EGGMAN</button>
                                             <p id="spend-limit"></p>
                                             <br>
@@ -142,15 +144,16 @@
                                             </div>
                                             <br>
                                         </div>
-                                        <button class="btn btn-lg btn-buy" onclick="buyEggs2()" role="button">
+                                        <button class="btn btn--gold btn--large gtm__HeroBtn" onclick="buyEggs2()"
+                                            role="button">
                                             Hire <span id="eggs-to-buy-2">?</span> Miners
                                         </button>
                                     </div>
                                     <br>
                                     <div class="other-button-container">
-                                        <button class="btn btn-lg btn-hatch" onclick="hatchEggs1()"
-                                            role="button">Compound Miners</button>
-                                        <button class="btn btn-lg btn-sell"
+                                        <button class="btn btn--gold btn--large gtm__HeroBtn" onclick="hatchEggs1()"
+                                            role="button">Compound Miners</button><br>
+                                        <button class="btn btn--gold btn--large gtm__HeroBtn"
                                             onclick="sellEggs(displayTransactionMessage); document.getElementById('sellprice')"
                                             role="button">Pocket your EGGMAN</button>
                                     </div>
@@ -158,8 +161,10 @@
                                     <div class="altcolor">
                                         <img alt="Digging" class="icon" src="/images/eggman_logo.png">
                                         <div>
-                                            <label>Contract: <span id="contract-balance">?</label></p>
-                                            <label>Wallet Balance: <span id="user-balance">?</label></p>
+                                            <h4>Contract: <span id="contract-balance">?</h4>
+                                            </p>
+                                            <h4>Wallet Balance: <span id="user-balance">?</h4>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -167,133 +172,134 @@
                         </div>
                     </div>
                 </aside>
+
                 <aside class="textbox">
                     <div class="textbox__border textbox__border--black"></div>
-                    <div class="heading-secondary textbox__title feature__title--3">Why $EGGMAN, you wonder? </div>
-
+                    <div class="heading-secondary textbox__title feature__title--3">Why EggManMiner, you wonder? </div>
                     <div class="textbox__body textbox__body--orange">
                         <div class="textbox__body--feature textbox__body--feature--reverse">
+                            <div class="textbox__body--feature textbox__body--feature--reverse">
+                                <div class="hero__btn__group">
 
-                            <footer class="altcolor_b">
-                                <center>
-                                    <b style="font-size: xx-large;color:#B5A058">BUY EGGMAN <a
-                                            href="https://v2.spooky.fi/#/swap?inputCurrency=FTM&outputCurrency=0x8050bc51D00a2Ad1d42f018Ae1A27c8C5b433810"
-                                            target="_blank"><u style="color:#B5A058">HERE</u></a></b>
-                                </center>
-                                <br>
-                                <div class="row text-center">
-                                    <a href="#" class="apr" data-toggle="modal" data-target="#largeModal">How To
-                                        Start Mining</a>
+                                    <a href="#" class="btn btn--gold" data-toggle="modal" data-target="#largeModal">
+                                        <h5 class="gtm__HeroBtn">How To Start Mining</h5>
+                                    </a><br>
+
+                                    <a href="https://v2.spooky.fi/#/swap?inputCurrency=FTM&outputCurrency=0x8050bc51D00a2Ad1d42f018Ae1A27c8C5b433810"
+                                        target="_blank" class="btn btn--gold">
+                                        <h5 class="gtm__HeroBtn">Buy EGGMAN Here</h5>
+                                    </a>
+
                                 </div>
-                                <br>
-                                <center>
-                                    <h4><u>Sustainability</u></h4>
-                                    <p>EGGMANMiner pays a modest 8% daily, allowing investors to rest easy knowing
-                                        that their
-                                        investments have unlimited growth potential and a maximum, improbable risk
-                                        of less than
-                                        8%.</p>
-                                    <br>
-                                    <h4><u>Verified Public Contract</u></h4>
-                                    <p>The EGGMANMiner contract is public, verified and can be viewed here on <a
-                                            href="https://ftmscan.com/address/0x1765c9FAAaEebFA8c773E66B64E54F83ED1A125c"
-                                            target="_blank"><u>FTMScan</u></a>.</p>
-                                    <br>
-                                </center>
 
 
-                                <center>
-                                    <h4><u>Miner Info</u></h4>
-                                    <p>EGGMANMiner pays 8% daily, according to the current mining efficiency rate.
-                                        The mining
-                                        efficiency rate rises and falls as you and other players hire miners,
-                                        compound earnings
-                                        and pocket EGGMAN. </p>
-                                    <p>The object of the game is hiring more miners, sooner and more often than
-                                        other players.
-                                        This in turn earns you more EGGMAN faster. Hiring more miners using your
-                                        daily EGGMAN
-                                        earnings will 3x your miners within 30 days or less.</p>
-                                </center>
+                                <div class="paragraph paragraph--black textbox__paragraph features__text--3">
+                                    <u>Sustainability</u><br>
+                                    EGGMANMiner pays a modest 8% daily, allowing investors to rest easy knowing
+                                    that their
+                                    investments have unlimited growth potential and a maximum, improbable risk
+                                    of less than
+                                    8%. <br><br>
 
-                                <div class="modal fade" id="largeModal" tabindex="-1" role="dialog"
-                                    aria-labelledby="largeModal" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-hidden="true">&times;</button>
-                                                <br>
-                                                <br>
-                                                <h4 class="modal-title" id="myModalLabel">How to start mining:</h4>
-                                            </div>
+                                    <u>Verified Public Contract</u><br>
 
-                                            <div class="modal-body" style="color:#000000">
-                                                <p>1) Send EGGMAN To Metamask/Trustwallet wallet on Fantom Network
-                                                    Chain
-                                                    (ERC20).</p>
-                                                <p>2) In Metamask/Trustwallet Browser Connect to <b><a
-                                                            href="https://v2.spooky.fi/#/swap"
-                                                            target="_blank">https://v2.spooky.fi/#/swap</a></b> and
-                                                    swap you'r
-                                                    FTM for EGGMAN </p>
-                                                <p>3) At EGGMANminer:<br>
-                                                    a. Approve the amount of EGGMAN token you wish to spend.<br>
-                                                    b. Enter the EGGMAN amount to Hire Miners.<br>
-                                                    c. Click Hire miners.<br>
-                                                    d. Compound Daily to hire more miners to increase you'r
-                                                    profit.<br>
-                                                    e. Withdraw Profit using the "Pocket Your EGGMAN" button.</p><br>
-                                                <h5>Approve EGGMAN > Hire EGGMAN Miners > Mine EGGMAN > Compound
-                                                    Daily >
-                                                    Withdraw Profit!</h5><br>
-                                                <p>*** Disclamer *** Risk warning: <br>EGGMANMINER is subject to
-                                                    high risk.
-                                                    Please make your investment cautiously. Smart Miner and
-                                                    EGGMANMiner will not
-                                                    be responsible for your investment losses.</p>
-                                                <p>Crypto markets and Blockchain technology are high risk!</p>Always
-                                                do your own
-                                                due diligence<h3>Don't invest more than you can afford to lose!</h3><br>
-                                                <p>Thanks for your support!</p>
-                                                <p>EggManMiner Team</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default"
-                                                    data-dismiss="modal">Close</button>
+                                    The EGGMANMiner contract is public, verified and can be viewed here on <a
+                                        href="https://ftmscan.com/address/0xefa599908c48bbCF605B374B9BC0513BA8C2d54c"
+                                        target="_blank"><u>FTMScan</u></a>.<br><br>
+
+                                    <u>Miner Info</u><br>
+
+                                    EGGMANMiner pays 8% daily, according to the current mining efficiency rate.
+                                    The mining
+                                    efficiency rate rises and falls as you and other players hire miners,
+                                    compound earnings
+                                    and pocket EGGMAN. <br><br>
+
+                                    The object of the game is hiring more miners, sooner and more often than
+                                    other players.
+                                    This in turn earns you more EGGMAN faster. Hiring more miners using your
+                                    daily EGGMAN
+                                    earnings will 3x your miners within 30 days or less.<br><br>
+
+                                    <u>Referral link - 5%</u><br>
+                                    Earn <b>5%</b> of the EGGMAN used to hire miners by anyone who starts mining
+                                    using your
+                                    link:<br>
+                                    <b><span style="word-wrap: break-word;" id="ref-link">?</span></b><br><br>
+
+                                    <button class="btn" onclick="copyToClipboard('#ref-link')"><b>Copy
+                                            RefLink</b></button>
+
+                                    <div class="modal fade" id="largeModal" tabindex="-1" role="dialog"
+                                        aria-labelledby="largeModal" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true">&times;</button>
+                                                    <br>
+                                                    <br>
+                                                    <h4 class="modal-title" id="myModalLabel">How to start mining:</h4>
+                                                </div>
+
+                                                <div class="modal-body" style="color:#000000">
+                                                    <p>1) Send EGGMAN To Metamask/Trustwallet wallet on Fantom Network
+                                                        Chain
+                                                        (ERC20).</p>
+                                                    <p>2) In Metamask/Trustwallet Browser Connect to <b><a
+                                                                href="https://v2.spooky.fi/#/swap"
+                                                                target="_blank">https://v2.spooky.fi/#/swap</a></b> and
+                                                        swap you'r
+                                                        FTM for EGGMAN </p>
+                                                    <p>3) At EGGMANminer:<br>
+                                                        a. Approve the amount of EGGMAN token you wish to spend.<br>
+                                                        b. Enter the EGGMAN amount to Hire Miners.<br>
+                                                        c. Click Hire miners.<br>
+                                                        d. Compound Daily to hire more miners to increase you'r
+                                                        profit.<br>
+                                                        e. Withdraw Profit using the "Pocket Your EGGMAN" button.</p>
+                                                    <br>
+                                                    <h5>Approve EGGMAN > Hire EGGMAN Miners > Mine EGGMAN > Compound
+                                                        Daily >
+                                                        Withdraw Profit!</h5><br>
+                                                    <p>*** Disclamer *** Risk warning: <br>EGGMANMINER is subject to
+                                                        high risk.
+                                                        Please make your investment cautiously. Smart Miner and
+                                                        EGGMANMiner will not
+                                                        be responsible for your investment losses.</p>
+                                                    <p>Crypto markets and Blockchain technology are high risk!</p>Always
+                                                    do your own
+                                                    due diligence<h3>Don't invest more than you can afford to lose!</h3>
+                                                    <br>
+                                                    <p>Thanks for your support!</p>
+                                                    <p>EggManMiner Team</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
+
                                 </div>
-                                <br>
-                                <center>
-                                    <h4><u>Referral link - 5%</u></h4>
-                                    <p>Earn <b>5%</b> of the EGGMAN used to hire miners by anyone who starts mining
-                                        using your
-                                        link: <b><span style="word-wrap: break-word;" id="ref-link">?</span></b></p>
-                                    <br>
-                                    <p><button class="btn" onclick="copyToClipboard('#ref-link')"><b>Copy
-                                                RefLink</b></button>
-                                    </p>
+                            </div>
 
-                                    <img alt="Fantom Networok" class="" src="/images/Eggman-Logo.svg">
-                                </center>
-                            </footer>
+                            <!-- scripts -->
+                            <script src="/js/jquery.min.js"></script>
+                            <script src="/js/jquery.dropotron.min.js"></script>
+                            <script src="/js/bootstrap.min.js"></script>
+                            <script src="/js/browser.min.js"></script>
+                            <script src="/js/breakpoints.min.js"></script>
+                            <script src="/js/util.js"></script>
+                            <script src="/js/interface.js"></script>
+                            <script src="/js/main.js"></script>
+                            <script src="/js/web3.min.js"></script>
+                            <script src="/js/main_eth.js"></script>
+                            <script src="/js/crypto-js.min.js"></script>
+
                         </div>
-
-                        <!-- scripts -->
-                        <script src="/js/jquery.min.js"></script>
-                        <script src="/js/jquery.dropotron.min.js"></script>
-                        <script src="/js/bootstrap.min.js"></script>
-                        <script src="/js/browser.min.js"></script>
-                        <script src="/js/breakpoints.min.js"></script>
-                        <script src="/js/util.js"></script>
-                        <script src="/js/interface.js"></script>
-                        <script src="/js/main.js"></script>
-                        <script src="/js/web3.min.js"></script>
-                        <script src="/js/main_eth.js"></script>
-                        <script src="/js/crypto-js.min.js"></script>
-                    </div>
                 </aside>
             </div>
         </section>
