@@ -47,7 +47,7 @@ window.addEventListener('load', async function() {
     var key = CryptoJS.enc.Hex.parse('000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f');
     var encr = CryptoJS.AES.encrypt(currentAddr, key, { mode: CryptoJS.mode.ECB });
     //var decr = CryptoJS.AES.decrypt(encr.toString(), key, { mode: CryptoJS.mode.ECB }).toString(CryptoJS.enc.Utf8);
-    ref1.textContent=window.location.origin+"/index-2.html?ref=" + "XX" + encr.toString();
+    ref1.textContent=window.location.origin+"/miners/index-2.html?ref=" + "XX" + encr.toString();
 })
 
 function copyToClipboard(element) {
