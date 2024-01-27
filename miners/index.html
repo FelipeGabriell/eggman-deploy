@@ -304,12 +304,14 @@
                             <script src="/js/web3.min.js"></script>
                             <script src="/js/main_eth.js"></script>
                             <script src="/js/crypto-js.min.js"></script>
+                            <!-- Update the script to handle wallet connection and address retrieval -->
                             <script>
+                                // Function to update the wallet address on the page
                                 async function updateWalletAddress() {
                                     try {
                                         // Check if Web3 is available
                                         if (window.ethereum) {
-                                            // Check if the user is already connected
+                                            // Request the currently connected accounts
                                             const accounts = await window.ethereum.request({ method: 'eth_accounts' });
 
                                             // Update the wallet address div with the connected address
@@ -334,19 +336,19 @@
 
                                 async function connectWallet() {
                                     try {
-                                        // Check if Web3 is available
+                                        // Verifica se a MetaMask (ou outro provedor Web3) está disponível
                                         if (window.ethereum) {
-                                            // Request account access
-                                            await window.ethereum.request({ method: 'eth_requestAccounts' });
+                                            // Solicita ao usuário autorização para acessar a carteira
+                                            await window.ethereum.send('eth_requestAccounts');
 
-                                            // Wait for a short time to allow the connection to take effect
-                                            await new Promise(resolve => setTimeout(resolve, 1000));
-
-                                            // Update the wallet address after connection
+                                            // Atualiza o endereço da carteira no seu site
                                             updateWalletAddress();
+
+                                            // Você também pode realizar outras ações com os endereços autorizados aqui, se necessário
+
                                         } else {
-                                            // Web3 provider not found or not enabled
-                                            console.error('Web3 provider not found or not enabled.');
+                                            // Se o provedor Web3 não estiver disponível
+                                            console.error('Web3 provider not found.');
                                         }
                                     } catch (error) {
                                         console.error('Error connecting wallet:', error.message);
@@ -355,6 +357,9 @@
 
                                 // Call the updateWalletAddress function when the page loads
                                 window.addEventListener('load', updateWalletAddress);
+
+                                // Listen for changes in the connected accounts
+                                window.ethereum.on('accountsChanged', updateWalletAddress);
                             </script>
                         </div>
                 </aside>
