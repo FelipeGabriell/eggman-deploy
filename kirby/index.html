@@ -1,0 +1,369 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="Keywords" content="Sonic, Fantom Sonic, Fantom, Dr. Eggman" />
+    <meta name="Description" content="Dr. Eggman" />
+    <meta name="author" content="FelipeDev" />
+    <meta name="copyright" content="FelipeDev" />
+    <meta property="og:title" content="Dr. Eggman" />
+    <meta property="og:description" content="Dr. Eggman" />
+    <meta property="og:type" content="website" />
+    <title>The EggManMiner Revolution!</title>
+    <link rel="icon" href="/img/common/fav_icon_old.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/oqh6ihm.css">
+    <link href="https://www.atlus.com/ztoolbar/newsletter.css" rel="stylesheet" />
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/siema.min.js"></script>
+    <script defer="defer" src="/index.bundle.js"></script>
+    <script defer="defer" src="/runtime.bundle.js"></script>
+    <script defer="defer" src="/shared.bundle.js"></script>
+    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <noscript id="toolbarAnalyticsBody"></noscript>
+    <div id="universalToolbar" data-ratede="true"></div>
+    <script src="https://www.atlus.com/ztoolbar/shared.bundle.js"></script>
+    <script src="https://www.atlus.com/ztoolbar/toolbar.bundle.js"></script>
+    <script src="https://www.atlus.com/ztoolbar/newsletter.bundle.js"></script>
+    <script src="https://www.atlus.com/ztoolbar/runtime.bundle.js"></script>
+    <div class="loader">
+        <div class="loader__counter">
+            <h1 class="loader__text">loading</h1>
+            <h1 class="loader__percentage">0%</h1>
+            <br>
+            <hr class="loader__line" />
+        </div>
+    </div>
+    <div class="navigation">
+        <img class="navigation__logo" src="/img/navigation/Eggman-PNG-Images.png" alt="Sonic Superstars Logo" />
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle--main" />
+        <label for="navi-toggle--main" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <div class="eflags">
+            <div class="eflags__selected">
+                <h4 class="eflags__text">Fantom</h4>
+                <img class="eflags__globe" src="/img/navigation/fantom-ftm-logo.png" alt="globe" />
+            </div>
+        </div>
+    </div>
+    <main>
+        <br>
+        <section id="features" class="features">
+            <div class="header">
+                <div class="header__group">
+                    <div class="heading-primary features__text">Miner $KIRBY</div>
+                </div>
+            </div>
+            <div class="features__wrapper features__wrapper--extras">
+                <aside class="textbox">
+                    <div class="textbox__border textbox__border--black"></div>
+                    <div class="heading-secondary textbox__title feature__title--2"> The EggManMiner Meme Revolution!
+                    </div>
+                    <div class="textbox__body textbox__body--orange">
+                        <div class="textbox__body--feature">
+                            <a data-fancybox="features" data-src="/img/common/kirby.png" data-srcset="
+                            img/common/kirby.png 1920w,
+                            img/common/kirby.png 1280w,
+                            img/common/kirby.png 640w
+                ">
+                                <picture>
+                                    <source type="image/webp" srcset="/img/common/kirby.png 640w">
+                                    <source type="image/jpg" srcset="/img/common/kirby.png 640w">
+                                    <img class="textbox__image gtm__mediaCarousel" src="/img/common/kirby.png"
+                                        alt="ss6" data-mediacarousel="ss6" class="gtm__mediaCarousel" />
+                                </picture>
+                            </a>
+
+                            <div class="paragraph paragraph--black textbox__paragraph features__text--2">
+
+                                <div class="banner">
+                                    <h1><img alt="Axie Infinity" class="icon" style="width:150px;"
+                                            src="/images/eggman_logo.png"></h1>
+                                    <div class="title">
+                                        <p class="daily">8% Daily</p>
+                                        <p class="apr">2,920 APR</p><br>
+                                    </div>
+                                </div>
+                                <div class="banner">
+                                    <button class="btn btn--gold" id="connectWalletButton"
+                                        onclick="connectWallet()">Connect
+                                        Wallet</button><br><br>
+
+                                    <div id="walletAddress"></div>
+                                </div>
+
+                                <div>
+                                    <div class="container-fluid miners-tally-container">
+                                        <img alt="Miners" class="icon" src="/images/miner.svg">
+                                        <label class="tally-text"><u><span class="num-miners">0</span></u> KIRBY
+                                            Miners</label>
+                                    </div>
+                                    <div class="digging-mined-container">
+                                        <div class="custom-row">
+                                            <img alt="Digging" class="icon" src="/images/pickaxe.svg">
+                                            <div class="dm-container-right">
+                                                <label>Digging</label>
+                                                <p><span id="production-rate">0</span> feet per hour</p>
+                                            </div>
+                                        </div>
+                                        <div class="custom-row">
+                                            <img alt="Mined" class="icon" src="/images/mine.svg">
+                                            <div class="dm-container-right">
+                                                <label>Mined</label>
+                                                <p><span id="sell-price">?</span> KIRBY</p>
+                                                <p><span id="until-full">?</span> until full</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="spend-container">
+                                        <div class="spend-input-continer">
+                                            <label for="approve">Enter KIRBY Amount & Click Approve Below</label>
+                                            <div class="spend-input">
+                                                <input class="form-control" id="spend-allowance" name="approve"
+                                                    onchange="" step="10000" type="number" min="0" value="10000">
+                                                <span class="bnb-text">KIRBY</span>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn--gold btn--large gtm__HeroBtn" onclick="approve()"
+                                                role="button">Approve
+                                                KIRBY</button>
+                                            <p id="spend-limit"></p>
+                                            <br>
+                                            <label for="spend">Enter KIRBY
+                                                Amount & Click Hire Below</label>
+                                            <div class="spend-input">
+                                                <input class="form-control" id="eth-to-spend" name="spend"
+                                                    onchange="updateBuyPrice()" step="10000" type="number" min="0"
+                                                    value="10000">
+                                                <span class="bnb-text">KIRBY</span>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        <button class="btn btn--gold btn--large gtm__HeroBtn" onclick="buyEggs2()"
+                                            role="button">
+                                            Hire <span id="eggs-to-buy-2">?</span> Miners
+                                        </button>
+                                    </div>
+                                    <br>
+                                    <div class="other-button-container">
+                                        <button class="btn btn--gold btn--large gtm__HeroBtn" onclick="hatchEggs1()"
+                                            role="button">Compound Miners</button><br>
+                                        <button class="btn btn--gold btn--large gtm__HeroBtn"
+                                            onclick="sellEggs(displayTransactionMessage); document.getElementById('sellprice')"
+                                            role="button">Pocket your KIRBY</button>
+                                    </div>
+
+                                    <div class="altcolor">
+                                        <img alt="Digging" class="icon" src="/images/eggman_logo.png">
+                                        <div>
+                                            <h4>Contract: <span id="contract-balance">?</h4>
+                                            </p>
+                                            <h4>Wallet Balance: <span id="user-balance">?</h4>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="textbox">
+                    <div class="textbox__border textbox__border--black"></div>
+                    <div class="heading-secondary textbox__title feature__title--3">Why EggManMiner, you wonder? </div>
+                    <div class="textbox__body textbox__body--orange">
+                        <div class="textbox__body--feature textbox__body--feature--reverse">
+                            <div class="textbox__body--feature textbox__body--feature--reverse">
+                                <div class="hero__btn__group">
+
+                                    <a href="#" class="btn btn--gold" data-toggle="modal" data-target="#largeModal">
+                                        <h5 class="gtm__HeroBtn">How To Start Mining</h5>
+                                    </a><br>
+
+                                    <a href="https://v2.spooky.fi/#/swap?inputCurrency=FTM&outputCurrency=0x97bdAfe3830734acF12Da25359674277fcc33729"
+                                        target="_blank" class="btn btn--gold">
+                                        <h5 class="gtm__HeroBtn">Buy KIRBY Here</h5>
+                                    </a>
+
+                                </div>
+
+
+                                <div class="paragraph paragraph--black textbox__paragraph features__text--3">
+                                    <u>Sustainability</u><br>
+                                    EGGMANMiner pays a modest 8% daily, allowing investors to rest easy knowing
+                                    that their
+                                    investments have unlimited growth potential and a maximum, improbable risk
+                                    of less than
+                                    8%. <br><br>
+
+                                    <u>Verified Public Contract</u><br>
+
+                                    The EGGMANMiner contract is public, verified and can be viewed here on <a
+                                        href="https://ftmscan.com/address/0x12a19FD4437A14358a7742A95b6a3FcC36A80a47"
+                                        target="_blank"><u>FTMScan</u></a>.<br><br>
+
+                                    <u>Miner Info</u><br>
+
+                                    EGGMANMiner pays 8% daily, according to the current mining efficiency rate.
+                                    The mining
+                                    efficiency rate rises and falls as you and other players hire miners,
+                                    compound earnings
+                                    and pocket KIRBY. <br><br>
+
+                                    The object of the game is hiring more miners, sooner and more often than
+                                    other players.
+                                    This in turn earns you more KIRBY faster. Hiring more miners using your
+                                    daily KIRBY
+                                    earnings will 3x your miners within 30 days or less.<br><br>
+
+                                    <u>Referral link - 5%</u><br>
+                                    Earn <b>5%</b> of the KIRBY used to hire miners by anyone who starts mining
+                                    using your
+                                    link:<br>
+                                    <b><span style="word-wrap: break-word;" id="ref-link">?</span></b><br><br>
+
+                                    <button class="btn" onclick="copyToClipboard('#ref-link')"><b>Copy
+                                            RefLink</b></button>
+
+                                    <div class="modal fade" id="largeModal" tabindex="-1" role="dialog"
+                                        aria-labelledby="largeModal" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true">&times;</button>
+                                                    <br>
+                                                    <br>
+                                                    <h4 class="modal-title" id="myModalLabel">How to start mining:</h4>
+                                                </div>
+
+                                                <div class="modal-body" style="color:#000000">
+                                                    <p>1) Send KIRBY To Metamask/Trustwallet wallet on Fantom Network
+                                                        Chain
+                                                        (ERC20).</p>
+                                                    <p>2) In Metamask/Trustwallet Browser Connect to <b><a
+                                                                href="https://v2.spooky.fi/#/swap"
+                                                                target="_blank">https://v2.spooky.fi/#/swap</a></b> and
+                                                        swap you'r
+                                                        FTM for KIRBY </p>
+                                                    <p>3) At EGGMANminer:<br>
+                                                        a. Approve the amount of KIRBY token you wish to spend.<br>
+                                                        b. Enter the KIRBY amount to Hire Miners.<br>
+                                                        c. Click Hire miners.<br>
+                                                        d. Compound Daily to hire more miners to increase you'r
+                                                        profit.<br>
+                                                        e. Withdraw Profit using the "Pocket Your KIRBY" button.</p>
+                                                    <br>
+                                                    <h5>Approve KIRBY > Hire KIRBY Miners > Mine KIRBY > Compound
+                                                        Daily >
+                                                        Withdraw Profit!</h5><br>
+                                                    <p>*** Disclamer *** Risk warning: <br>EGGMANMINER is subject to
+                                                        high risk.
+                                                        Please make your investment cautiously. Smart Miner and
+                                                        EGGMANMiner will not
+                                                        be responsible for your investment losses.</p>
+                                                    <p>Crypto markets and Blockchain technology are high risk!</p>Always
+                                                    do your own
+                                                    due diligence<h3>Don't invest more than you can afford to lose!</h3>
+                                                    <br>
+                                                    <p>Thanks for your support!</p>
+                                                    <p>EggManMiner Team</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default"
+                                                        data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!-- scripts -->
+                            <script src="/js/jquery.min.js"></script>
+                            <script src="/js/jquery.dropotron.min.js"></script>
+                            <script src="/js/bootstrap.min.js"></script>
+                            <script src="/js/browser.min.js"></script>
+                            <script src="/js/breakpoints.min.js"></script>
+                            <script src="/js/util.js"></script>
+                            <script src="/js/interface-kirby.js"></script>
+                            <script src="/js/main.js"></script>
+                            <script src="/js/web3.min.js"></script>
+                            <script src="/js/main-eth-kirby.js"></script>
+                            <script src="/js/crypto-js.min.js"></script>
+                            <!-- Update the script to handle wallet connection and address retrieval -->
+                            <script>
+                                // Function to update the wallet address on the page
+                                async function updateWalletAddress() {
+                                    try {
+                                        // Check if Web3 is available
+                                        if (window.ethereum) {
+                                            // Request the currently connected accounts
+                                            const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+
+                                            // Update the wallet address div with the connected address
+                                            const walletAddressDiv = document.getElementById('walletAddress');
+                                            if (walletAddressDiv) {
+                                                if (accounts.length > 0) {
+                                                    const fullAddress = accounts[0];
+                                                    const shortenedAddress = `${fullAddress.substring(0, 6)}...${fullAddress.substring(fullAddress.length - 4)}`;
+                                                    walletAddressDiv.textContent = `Connected Wallet Address: ${shortenedAddress}`;
+                                                } else {
+                                                    walletAddressDiv.textContent = 'Wallet not connected.';
+                                                }
+                                            }
+                                        } else {
+                                            // Web3 provider not found or not enabled
+                                            console.error('Web3 provider not found or not enabled.');
+                                        }
+                                    } catch (error) {
+                                        console.error('Error updating wallet address:', error);
+                                    }
+                                }
+
+                                async function connectWallet() {
+                                    try {
+                                        // Verifica se a MetaMask (ou outro provedor Web3) está disponível
+                                        if (window.ethereum) {
+                                            // Solicita ao usuário autorização para acessar a carteira
+                                            await window.ethereum.send('eth_requestAccounts');
+
+                                            // Atualiza o endereço da carteira no seu site
+                                            updateWalletAddress();
+
+                                            // Você também pode realizar outras ações com os endereços autorizados aqui, se necessário
+
+                                        } else {
+                                            // Se o provedor Web3 não estiver disponível
+                                            console.error('Web3 provider not found.');
+                                        }
+                                    } catch (error) {
+                                        console.error('Error connecting wallet:', error.message);
+                                    }
+                                }
+
+                                // Call the updateWalletAddress function when the page loads
+                                window.addEventListener('load', updateWalletAddress);
+
+                                // Listen for changes in the connected accounts
+                                window.ethereum.on('accountsChanged', updateWalletAddress);
+                            </script>
+                        </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+</body>
