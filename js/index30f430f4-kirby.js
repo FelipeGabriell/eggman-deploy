@@ -44,7 +44,7 @@ var app = new Vue({
                 package: WalletConnectProvider,
                 options: {
                     rpc: {
-                        250: 'https://rpc.ankr.com/fantom'
+                        250: 'https://endpoints.omniatech.io/v1/fantom/mainnet/public'
                     },
                     chainId: 250,
                     infuraId: 'd85fda7b424b4212ba72f828f48fbbe1',
@@ -208,7 +208,7 @@ var app = new Vue({
         },
 
         async readValues() {
-            const web3 = new Web3('https://rpc.ankr.com/fantom');
+            const web3 = new Web3('https://endpoints.omniatech.io/v1/fantom/mainnet/public');
             let instance = new web3.eth.Contract(contractABI, contractAddress);
             let tokenInstance = new web3.eth.Contract(tokenABI, tokenAddress);
 
