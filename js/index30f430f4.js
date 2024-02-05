@@ -339,13 +339,11 @@ var app = new Vue({
         this.notify('Minimum rebake limit is 0.01 EGGMAN')
         return
       }
-      const gasPrice = this.web3Object.utils.toWei('20', 'gwei')
       this.contractInstance.methods
         .hatchEggs(this.referrarAddr)
         .send({
           from: this.metamaskAccount,
-          to: contractAddress,
-          gasPrice: gasPrice
+          to: contractAddress
         })
         .on('transactionHash', (hash) => {
           console.log('Transaction Hash: ', hash)
@@ -353,8 +351,6 @@ var app = new Vue({
         })
         .on('receipt', (receipt) => {
           this.readValue()
-          this.updateLastExecutionTime(); // Update lastExecutionTime
-          this.startTimer(); // Restart the timer
           console.log('Receipt: ', receipt)
           this.notify('Transaction is Completed!')
         })
