@@ -122,7 +122,7 @@ var app = new Vue({
       const elapsedTime = now - this.lastExecutionTime;
 
       // Calculate remaining time in seconds
-      const remainingTimeInSeconds = 24 * 60 * 60 - elapsedTime;
+      const remainingTimeInSeconds = Math.max(0, 24 * 60 * 60 - elapsedTime);
 
       // Atualizar os valores apenas se houver uma mudança nos minutos
       const remainingMinutes = Math.floor(remainingTimeInSeconds / 60);
